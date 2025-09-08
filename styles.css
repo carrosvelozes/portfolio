@@ -630,7 +630,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .container {
-        padding: 0 16px;
+        padding: 0 24px;
     }
     .hero {
         min-height: 50vh;
@@ -686,6 +686,13 @@ a:hover {
     .project-card {
         margin: 0 auto;
         max-width: 100%;
+        text-align: center;
+    }
+    .project-content {
+        text-align: left;
+    }
+    .project-actions {
+        justify-content: center;
     }
 }
 
@@ -694,7 +701,7 @@ a:hover {
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 12px;
+        padding: 0 20px;
     }
     .hero {
         min-height: 40vh;
@@ -722,6 +729,10 @@ a:hover {
         font-size: clamp(20px, 5vw, 24px);
         margin-bottom: 20px;
     }
+    .about-content {
+        text-align: left;
+        padding: 0 8px;
+    }
     .about-content p {
         font-size: 14px;
         line-height: 1.5;
@@ -729,6 +740,7 @@ a:hover {
     .about-content h3 {
         font-size: 16px;
         margin: 20px 0 10px 0;
+        text-align: center;
     }
     .about-content ul li {
         font-size: 14px;
@@ -748,7 +760,8 @@ a:hover {
         word-break: break-word;
     }
     .project-content {
-        padding: 16px;
+        padding: 20px;
+        text-align: center;
     }
     .project-content h3 {
         font-size: 1.1rem;
@@ -756,6 +769,9 @@ a:hover {
     .project-content p {
         font-size: 14px;
         line-height: 1.4;
+    }
+    .project-actions {
+        justify-content: center;
     }
 }
 
@@ -832,6 +848,33 @@ a:hover {
     }
     .section {
         padding: 24px 0;
+    }
+}
+
+
+/* Celulares muito pequenos (320px e abaixo) */
+
+@media (max-width: 320px) {
+    .container {
+        padding: 0 16px;
+    }
+    .hero {
+        padding: 1rem 0;
+    }
+    .about-content {
+        padding: 0 4px;
+    }
+    .contact-card {
+        padding: 12px;
+        margin: 0 4px;
+    }
+    .project-content {
+        padding: 16px;
+    }
+    .ascii-art pre {
+        font-size: 8px;
+        overflow-x: scroll;
+        padding: 0 8px;
     }
 }
 
